@@ -1,0 +1,86 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the entire app */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* Main container card */
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+/* Links styled as buttons */
+a {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 25px;
+
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+
+    transition: 0.2s ease;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header */
+th {
+    background-color: #2563eb;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+/* Table cells */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Improve spacing under table */
+table + a {
+    display: block;
+    text-align: center;
+}

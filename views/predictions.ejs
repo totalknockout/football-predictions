@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictions</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upcoming Match Predictions</h1>
+
+        <% if (predictions.length === 0) { %>
+            <p style="text-align:center;">No predictions available right now.</p>
+        <% } else { %>
+            <table>
+                <tr>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Prediction</th>
+                    <th>Start Date/Time</th>
+                </tr>
+                <% predictions.forEach(p => { %>
+                    <tr>
+                        <td><%= p.home_team %></td>
+                        <td><%= p.away_team %></td>
+                        <td><%= p.prediction %></td>
+                        <td><%= new Date(p.start_date).toLocaleString() %></td>
+                    </tr>
+                <% }); %>
+            </table>
+        <% } %>
+
+        <div style="text-align:center;">
+            <a href="/">Back Home</a>
+        </div>
+    </div>
+</body>
+</html>
